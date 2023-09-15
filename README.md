@@ -12,4 +12,6 @@ pnpm start
 
 touch .env
 - creates proces.env file
-add EXPO_PUBLIC_GOOGLE_MAPS_APIKEY = "ENTER KEY"
+add code
+
+EXPO_PUBLIC_GOOGLE_MAPS_APIKEY = "ENTER KEY"
