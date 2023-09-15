@@ -31,7 +31,7 @@ export default function App() {
     <>
     <View style={styles.container}>
       <MapView
-        minZoomLevel={14}
+        minZoomLevel={15}
         zoomEnabled={true}
         zoomTapEnabled={true}
         showsCompass={true}
@@ -52,13 +52,11 @@ export default function App() {
           strokeColor="blue"
 
           onStart={(params) => {
-            console.log(`Started routing between "${params.origin}" and "${params.destination}"`);
+            console.log({params});
           }}
 
           onReady={result => {
             setResult(result)
-            console.log(`Distance: ${result.distance} km`)
-            console.log(`Duration: ${result.duration} min.`)
           }}
 
         />
