@@ -1,5 +1,4 @@
-{
-  "expo": {
+module.exports = {
     "name": "maps3",
     "slug": "maps3",
     "version": "1.0.0",
@@ -17,7 +16,7 @@
     "ios": {
       "supportsTablet": true,
       "config": {
-        "googleMapsApiKey": {}
+        "googleMapsApiKey": process.env.GOOGLE_MAPS_APIKEY
       }
     },
     "android": {
@@ -30,4 +29,3 @@
       "favicon": "./assets/favicon.png"
     }
   }
-}

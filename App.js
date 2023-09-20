@@ -1,3 +1,6 @@
+import Constants from 'expo-constants';
+console.log(1,Constants)
+
 import React, { useState } from 'react';
 import { StyleSheet, View, Button, Text } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
@@ -6,7 +9,7 @@ import MapViewDirections from 'react-native-maps-directions';
 
 export default function App() {
 
-  const GOOGLE_MAPS_APIKEY = process.env.EXPO_PUBLIC_GOOGLE_MAPS_APIKEY;
+  const GOOGLE_MAPS_APIKEY = Constants.expoConfig.ios.config.googleMapsApiKey
 
   const [mapRegion, setmapRegion] = useState({
     latitude: 20.637518960745023,
