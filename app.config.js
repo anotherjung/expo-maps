@@ -16,7 +16,7 @@ module.exports = {
     "ios": {
       "supportsTablet": true,
       "config": {
-        "googleMapsApiKey": process.env.GOOGLE_MAPS_APIKEY
+        "googleMapsApiKey": process.env.EXPO_PUBLIC_GOOGLE_MAPS_APIKEY
       }
     },
     "android": {
