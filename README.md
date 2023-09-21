@@ -2,7 +2,11 @@
 yarn install
 
 # start local dev
-yarn install 
+yarn start
+
+yarn ios
+
+yarn android 
 
 # add your secret keys
 
